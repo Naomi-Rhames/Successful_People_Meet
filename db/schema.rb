@@ -23,6 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_06_155743) do
     t.string "about_me"
     t.string "occupation"
     t.string "hobbies"
+    t.integer "user_id"
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

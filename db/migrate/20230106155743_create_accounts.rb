@@ -9,6 +9,7 @@ class CreateAccounts < ActiveRecord::Migration[7.0]
       t.string :about_me
       t.string :occupation
       t.string :hobbies
+      t.integer :user_id
       t.string :location
       t.timestamps
     end
