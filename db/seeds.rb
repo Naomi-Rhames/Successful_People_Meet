@@ -9,12 +9,12 @@
 user = User.create([
     {
       email: "kells@email.com",
-      phone_number: 410-444-0000,
+      phone_number: "4104440000",
       password_digest: "1234567"
     },
     {
       email: "robo@email.com",
-      phone_number: 111-222-2000,
+      phone_number: "1112222000",
       password_digest: "0123"
     }
   ])

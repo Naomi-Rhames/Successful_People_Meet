@@ -31,7 +31,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_06_155743) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
