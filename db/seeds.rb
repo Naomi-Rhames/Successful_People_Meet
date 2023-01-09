@@ -19,7 +19,7 @@ user = User.create([
     }
   ])
   
-  Profile.create([
+  profile = Profile.create([
     {
       first_name: "Kelly",
       last_name: "Roland",
