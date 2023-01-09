@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_06_155743) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "accounts", force: :cascade do |t|
+  create_table "profiles", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.integer "age"
@@ -23,6 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_06_155743) do
     t.string "about_me"
     t.string "occupation"
     t.string "hobbies"
+    t.integer "user_id"
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,6 +1,6 @@
-class CreateAccounts < ActiveRecord::Migration[7.0]
+class CreateProfiles < ActiveRecord::Migration[7.0]
   def change
-    create_table :accounts do |t|
+    create_table :profiles do |t|
       t.string :first_name
       t.string :last_name
       t.integer :age
@@ -9,6 +9,7 @@ class CreateAccounts < ActiveRecord::Migration[7.0]
       t.string :about_me
       t.string :occupation
       t.string :hobbies
+      t.integer :user_id
       t.string :location
       t.timestamps
     end
