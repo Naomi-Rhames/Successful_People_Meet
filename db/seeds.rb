@@ -6,20 +6,20 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-# user = User.create([
-#     {
-#       email: "kells@email.com",
-#       phone_number: 410-444-0000,
-#       password: "1234567"
-#     },
-#     {
-#       email: "robo@email.com",
-#       phone_number: 111-222-2000,
-#       password: "0123"
-#     }
-#   ])
+user = User.create([
+    {
+      email: "kells@email.com",
+      phone_number: 410-444-0000,
+      password_digest: "1234567"
+    },
+    {
+      email: "robo@email.com",
+      phone_number: 111-222-2000,
+      password_digest: "0123"
+    }
+  ])
   
-#   Profile.create([
+#  profile = Profile.create([
 #     {
 #       first_name: "Kelly",
 #       last_name: "Roland",
@@ -46,3 +46,6 @@
       
 #     }
 #   ])
+
+
+  
