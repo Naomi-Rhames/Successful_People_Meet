@@ -6,20 +6,19 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-user = User.create([
-    {
+ kelly = User.create(
       email: "kells@email.com",
       phone_number: "4104440000",
       password_digest: "1234567"
-    },
-    {
+    ) 
+   
+ robot = User.create(   
       email: "robo@email.com",
       phone_number: "1112222000",
       password_digest: "0123"
-    }
-  ])
+    )
   
-  profile = Profile.create([
+  Profile.create([
     {
       first_name: "Kelly",
       last_name: "Roland",
@@ -30,7 +29,7 @@ user = User.create([
       occupation: "Software Engineer",
       hobbies: "traveling",
       location: "Texas",
-      user_id: user.first
+      user_id: kelly.id
     },
     {
       first_name: "Robo",
@@ -42,7 +41,7 @@ user = User.create([
       occupation: "Robot singer",
       hobbies: "singing",
       location: "Binary, MD",
-      user_id: user.last
+      user_id: robot.id
       
     }
   ])
