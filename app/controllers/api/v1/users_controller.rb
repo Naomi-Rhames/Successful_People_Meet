@@ -12,19 +12,21 @@ module Api
             end
 
             def index 
-                users = User.all
-                render json: users 
+                user = User.all
+                render json: UserSerializer.new(user).serialized_json
             end 
             
             def show 
                user = User.find(params[:id])      
-               render json:user    
+               render json: AirlineSerializer.new(user).serialized_json  
             end     
 
+            private
             
             def user_params
                 params.permit(:email, :phone_number, :password)
             end    
+
         end
     end
 end
