@@ -12,8 +12,8 @@ module Api
             end
 
             def index 
-                user = User.all
-                render json: UserSerializer.new(user).serialized_json
+                users = User.all
+                render json: users
             end 
             
             def show 
@@ -24,7 +24,7 @@ module Api
             private
             
             def user_params
-                params.permit(:email, :phone_number, :password)
+                params.permit(:email, :phone_number)
             end    
 
         end
