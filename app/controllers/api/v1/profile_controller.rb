@@ -10,6 +10,8 @@ module Api
                     render json: {error: user.error.messages}, status: 422
                 end 
             end
+
+            
         
             def index
                 profile = Profile.all
