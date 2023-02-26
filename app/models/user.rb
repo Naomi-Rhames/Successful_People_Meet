@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+    has_secure_password
     has_one :profile
 
     validates :phone_number, :email,  presence: true
